@@ -29,12 +29,15 @@
   
 }
 
-.logo_place_header {
+.logo {
   position: absolute;
+  z-index: 2;
+}
+
+.logo_place_header {
   left: 64px;
   top: 30px;
   line-height: 32px;
-  z-index: 2;
 }
 
 .header__title {
@@ -324,6 +327,12 @@
 
 .column__social {
   margin: 0 auto 0;
+}
+
+.footer__social-icon{
+  height: 16px;
+  width: 16px;
+  padding-right: 10px;
 }
 
 .footer__column-links {
