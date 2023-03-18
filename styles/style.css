@@ -22,11 +22,12 @@
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  margin: 64px 0 auto auto;
-  
+  top: 64px;
+  right: 0;
 }
 
 .logo {
@@ -79,7 +80,7 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  object-fit: scale-down;
+  object-fit: cover;
 }
 
 .description {
@@ -120,7 +121,6 @@
   font-weight: 600;
   line-height: 34px;
   font-size: 24px;
-  padding: 30px 0 30px;
 }
 
 .digits {
@@ -157,7 +157,8 @@
 
 .table__cell {
   width: 250px;
-  padding-top: 60px;
+  margin: 60px 0 0 0;
+  padding: 0;
 }
 
 .table__heading {
@@ -229,9 +230,6 @@
   padding-bottom: 90px;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/kaufman-triangle.svg);
-  background-repeat: no-repeat;
-  background-position: top right -210px;
 }
 
 .section-title_theme_dark {
@@ -273,6 +271,13 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+.kaufman_triangle { 
+  position: absolute; 
+  right: -210px; 
+  top: 0; 
+  z-index: 1; 
+} 
 
 .table_heading_theme_dark {
   font-weight: 600;
@@ -318,9 +323,12 @@
 
 .footer__author {
   margin: 18px 0 18px;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 18px;
 }
 
-.footer_column_info {
+.footer_column_content_info {
   margin: 0 auto 0;
 }
 
@@ -332,7 +340,7 @@
   margin: 0;
 }
 
-.footer_column_social {
+.footer_column_content_social {
   margin: 0 auto 0;
 }
 
@@ -351,7 +359,7 @@
   margin-top: 20px;
 }
 
-ul {
+.footer_column-links_ul {
   list-style: none;
   margin: 0;
   padding: 0;
