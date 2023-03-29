@@ -7,8 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  overflow: hidden;
-}
+  }
 
 .header {
   height: 100vh;
@@ -110,11 +109,16 @@
   min-width: 784px;
 }
 
+.two-columns__main-text :last-child {
+  padding-bottom: 0;
+}
+
 .two-columns__paragraph {
   font-weight: normal;
   line-height: 34px;
   font-size: 24px;
-  gap: 30px 0;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -230,6 +234,7 @@
   padding-bottom: 90px;
   overflow: hidden;
   position: relative;
+  margin: 0;
 }
 
 .section-title_theme_dark {
@@ -240,14 +245,13 @@
   font-weight: 600;
   margin: 0 auto 0;
   text-align: center;
-  padding-top: 90px;
   position: relative;
   z-index: 2;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  padding: 20px 0 80px;
+  padding: 20px 0 0;
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -269,14 +273,14 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table_cell_theme_dark {
+.table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 0;
+  padding-top: 80px;
 }
 
-.kaufman_triangle { 
+.kaufman__triangle { 
   position: absolute;
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
@@ -287,7 +291,7 @@
   width: 877px;
 } 
 
-.table_heading_theme_dark {
+.table__heading_theme_dark {
   font-weight: 600;
   line-height: 1.15;
   font-size: 24px;
@@ -295,7 +299,7 @@
   padding: 0;
 }
 
-.table_text_theme_dark {
+.table__text_theme_dark {
   font-weight: normal;
   line-height: 1.2;
   font-size: 18px;
@@ -324,7 +328,7 @@
   flex-direction: column;
 }
 
-.footer_column_content_copyright {
+.footer__column_content_copyright {
   justify-content: space-between;
   flex-basis: 711px;
 }
@@ -336,7 +340,7 @@
   font-size: 18px;
 }
 
-.footer_column_content_info {
+.footer__column_content_info {
   margin: 0 auto 0;
 }
 
@@ -346,10 +350,6 @@
   font-weight: 600;
   padding: 0;
   margin: 0;
-}
-
-.footer_column_content_social {
-  margin: 0 auto 0;
 }
 
 .footer__social-icon{
@@ -367,7 +367,7 @@
   margin-top: 20px;
 }
 
-.footer_column-links_ul {
+.footer__column-menu {
   list-style: none;
   margin: 0;
   padding: 0;
