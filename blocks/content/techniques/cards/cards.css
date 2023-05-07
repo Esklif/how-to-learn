@@ -1,0 +1,12 @@
+@import url(./__item/__item.css);
+@import url(./__image/__image.css);
+@import url(./__descriptiion/__description.css);
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 920px;
+}
