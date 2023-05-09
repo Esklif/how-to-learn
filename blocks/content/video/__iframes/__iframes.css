@@ -1,8 +1,7 @@
-@import url(../__iframe/__iframe.css);
-
 .video__iframes {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 50px;
+  transform: translateY(50px);
 }

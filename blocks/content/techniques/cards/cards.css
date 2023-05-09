@@ -1,6 +1,3 @@
-@import url(./__item/__item.css);
-@import url(./__image/__image.css);
-@import url(./__descriptiion/__description.css);
 
 .cards {
   display: grid;

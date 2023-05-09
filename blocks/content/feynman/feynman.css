@@ -1,7 +1,4 @@
-  @import url(./__link/__link.css);
-  @import url(./__subtitle/__subtitle.css);
-  @import url(./__title/__title.css);
-  
+
   .feynman {
     background-color: #f2f2f2;
     min-height: 890px;
