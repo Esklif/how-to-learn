@@ -1,9 +1,11 @@
-@import url(./normalize.css);
+@import url(../vendor/normalize.css);
+@import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/logo/_place/_place.css);
 @import url(../blocks/header/__link/__link.css);
 @import url(../blocks/header/__main-illustration/__main-illustration.css);
+@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/header/__square-pic/__square-pic.css);
 @import url(../blocks/header/__subtitle/__subtitle.css);
 @import url(../blocks/header/__title/__title.css);
@@ -34,7 +36,6 @@
 @import url(../blocks/table/__cell/__cell.css);
 @import url(../blocks/table/__heading/__heading.css);
 @import url(../blocks/table/__text/__text.css);
-@import url(../blocks/table/_theme/_theme.css);
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__container/__container.css);
 @import url(../blocks/khan/__author/__author.css);
@@ -42,6 +43,7 @@
 @import url(../blocks/khan/__quote/__quote.css);
 @import url(../blocks/khan/__quote-autor/__quote-autor.css);
 @import url(../blocks/khan/__quote-author-subline/__quote-author-subline.css);
+@import url(../blocks/khan/__book-container/__book-container.css);
 @import url(../blocks/khan/__buy-link/__buy-link.css);
 @import url(../blocks/khan/__book-pic/__book-pic.css);
 @import url(../blocks/kaufman/kaufman.css);
@@ -49,9 +51,9 @@
 @import url(../blocks/section-title/_theme/_theme.css);
 @import url(../blocks/section-subtitle/_theme/_theme.css);
 @import url(../blocks/table/_theme/_theme.css);
-@import url(../blocks/table/__cell/_theme_dark/_theme_dark.css);
-@import url(../blocks/table/__heading/_theme/_theme.css);
-@import url(../blocks/table/__text/_theme_dark/_theme_dark.css);
+@import url(../blocks/table/__cell/_theme/_theme_dark.css);
+@import url(../blocks/table/__heading/_theme/_theme_dark.css);
+@import url(../blocks/table/__text/_theme/_theme_dark.css);
 @import url(../blocks/resources/__link/__link.css);
 @import url(../blocks/resources/__logo-zone/__logo-zone.css);
 @import url(../blocks/feynman/feynman.css);
@@ -64,17 +66,7 @@
 @import url(../blocks/footer/__column-links/__column-links.css);
 @import url(../blocks/footer/__column-menu/__column-menu.css);
 @import url(../blocks/footer/__column/_content/_content.css);
-@import url(../blocks/footer/__column/_content_info/_content_info.css);
+@import url(../blocks/footer/__column/_content/_content_info.css);
 @import url(../blocks/footer/__author/__author.css);
 @import url(../blocks/footer/__social-icon/__social-icon.css);
 
-.page {
-    min-width: 1100px;
-    /* мы ещё не умеем делать мобильную версию сайта, */
-    /* поэтому выше установлена минимальная ширина страницы */
-    max-width: 1600px;
-    /* выше установили ограничение по максимальной ширине */
-    margin: 0 auto;
-    /* выше для экранов больше 1600px отцентрировали весь контент */
-    font-family: "Helvetica Neue", "Arial", sans-serif;
-    }
